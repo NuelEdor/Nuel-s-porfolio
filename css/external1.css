@@ -1,0 +1,596 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+#header{
+    /* position: fixed; */
+    top: 100;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-top: 15px;
+    border-radius: 10%;
+
+}
+#header:hover{
+    width:100%
+}
+#my_logo{
+    float: left;
+    max-width: ;
+    height: 40px;
+    margin-top:10px;
+    margin-left: 50px;
+    color: #BDD5EA;
+    margin-right: 100px;
+    font-size: small;
+}
+
+#my_logo a{
+    text-decoration: none;
+    color: #BDD5EA;
+    font-family: Jokerman;
+    font-size: 40px;
+  }
+
+
+
+#my_logo a:hover{
+     color: white;
+  }
+
+#my_menu{
+ 
+    width: 6%;
+    height: 45px;
+    margin-left: px;
+    font-family: jokerman;
+    font-size: 1.5rem;
+    color: #BDD5EA;
+    float: right;
+  
+    
+    
+    
+    
+}
+
+
+ul li{
+    display: inline;
+    margin-left: 75px;
+    width: 30%;
+  }
+
+ul li a{
+    text-decoration: none;
+    color: #BDD5EA;
+}
+
+ul li:hover {
+    background-color:;
+    border-radius: 6px;
+   
+    color: white;
+}
+
+ul li a:hover {
+       color: white;
+}
+
+#background{
+    background-color: black;
+    min-height: 900px;
+    width: 100%;
+    clear: both;
+    padding:60px 20px;
+    
+   
+}
+#snap{
+    padding-left: 100px;
+padding-top: 50px;}
+#img1{
+    border-radius: 50%;
+    height: 90%;
+    width: 80%;
+    float: left;
+    margin: 30px;
+}
+#welcome{
+    font-size: 90px;
+   font-weight: bold;
+    color: #8921E0;
+    text-align: center;
+    font-family: bell mt;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 10px  #8921E0;
+}
+#intro{
+    font-size: 30px;
+    margin: 30px;
+    color: #BDD5EA;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+#intropage{
+  align-items: center;
+  justify-content: center;
+  display: flex
+}
+#aboutme{
+    height: 500px;
+    width: 100%;
+    color: white;
+    font-family: bell mt;
+    clear: both;
+
+}
+#skills1{
+    height: 300px;
+    width: 100%;
+}
+#skills2{
+    height: 300px;
+    width: 100%;
+}
+#section4{padding:100px 20px; clear: both; background-color: #4F1E8A; min-height: 880px;}
+#skill{
+    color: #000; 
+    text-align: center; 
+    font-weight: bold;
+    font-family: bell mt; 
+    clear: both;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+#quotesh{
+    font-family: bell mt;
+    font-size: 48px;
+    
+}
+#quotesb{
+    font-size: 20px;
+    font-family: bell mt;
+    text-align: justify;
+}
+#blamilk{
+    color: gold;
+    font-size: 20px;
+}
+#blapurple{
+    color: gold;
+    font-size: 20px;
+}
+#contactdiv1{
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-family: bell mt;
+    font-size: 30px;
+    color: #000;
+}
+#section5{
+    padding:50px 20px; clear: both; 
+    min-height:1100px;
+    display: ;
+    background-color: #000;
+}
+#contactdiv2{
+    height: 300px;
+
+}
+#footermain{
+  min-height: 5rem; 
+  background-color: #8921E0; 
+  /* border: 1px solid purple;  */
+  display:   ;
+  margin-left: 0.01rem;
+}
+#footer1{
+  height: 150px; 
+  margin: 10px; 
+  /* border: 1px solid red; */
+  margin-top: 20px; 
+  float: left;
+  font-family: bell mt;
+}
+#footer2{
+  height: 100px;  
+  border: 1px solid green;
+  margin-top: 50px; 
+  float: left;
+}
+/* <!-- contact form starts here --> */
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 45px;
+}
+
+input[type=submit] {
+  background-color: #4F1E8A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor:crosshair;
+  height: 50px;
+
+}
+input[type=reset] {
+  background-color: #4F1E8A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor:crosshair;
+  height: 50px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #8921E0;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: solid gold;
+  padding: 20px;
+  width: 70%;
+}
+/* <!-- contact ends starts here --> */
+
+
+
+
+
+
+
+/* login styling starts here */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  /* logi styling ends here */
+
+/* topnav starts */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #;
+    color: gray;
+  }
+  #home{
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 6px;
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family:jokerman;
+    background-color: rgb(0, 0, 0, 1);
+
+  }
+  #menu{
+    border-radius: 6px;
+    margin-left: 180px;
+    font-family: jokerman;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #welcome{
+        font-size: 50px;
+       font-weight: bold;
+        color: #8921E0;
+        text-align: center;
+        font-family: bell mt;
+        text-transform: uppercase;
+    }
+    #intro{
+        font-size: 10px;
+        margin: 30px;
+        color: #BDD5EA;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+    #menu{
+        border-radius: 6px;
+        margin-left: 10px;
+        border: 1px solid #000;
+        font-family: jokerman;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      #section2{
+        height: 100px;
+      }
+      #img1{
+        border-radius: 50%;
+        height: 60%;
+        width: 50%;
+        float: left;
+        margin: 30px;
+    }
+    #welcome{
+        font-size:60px;
+       font-weight: bold;
+        color: #8921E0;
+        text-align: center;
+        font-family: bell mt;
+        text-transform: uppercase;
+    }
+    #intro{
+        font-size: 15px;
+        margin: 30px;
+        color: #BDD5EA;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+    #nav{
+        background-color:  rgb(0, 0, 0, 0);
+       
+    }
+    #skills1{
+        height: 1000px;
+        width: 100%;
+    }
+    #skills2{
+        margin-top: 200px;
+        height: 500px;
+        width: 100%;
+    }
+    #section4{
+        height: 1800px;
+    }
+    #section5{
+        height: 1800px;
+    }
+    #contactdiv2{
+        margin-top: 150px;
+    }
+  }
+  @media screen and (max-width: 1205px){
+    #menu{
+        border-radius: 6px;
+        margin-left:px;
+        font-family: jokerman;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      #section2{
+        height: 2000px;
+      }
+      #quotesh{
+        font-family: bell mt;
+        font-size: 32px;
+        
+    }
+    #quotesb{
+        font-size: 18px;
+        font-family: bell mt;
+        text-align: justify;
+    }
+    #blamilk{
+        color: gold;
+        font-size: 15px;
+    }
+    #blapurple{
+        color: gold;
+        font-size: 15px;
+    }
+    #section5{
+        height: 700px;
+    }
+    #contactdiv2{
+        margin-top: 100px;
+    }
+  }
+  @media screen and (max-width: 1440px){
+    #menu{
+        border-radius: 6px;
+        margin-left: 10px;
+        font-family: jokerman;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      #img1{
+        border-radius: 50%;
+        height: 60%;
+        width: 90%;
+        float: left;
+        margin: 30px;
+    }
+    #skills1{
+        height: 600px;
+        width: 100%;
+    }
+    #skills2{
+        height: 500px;
+        width: 100%;
+    }
+    #section4{
+        height: 1800px;
+    }
+  }
+  /* topnav ends */
+  
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+

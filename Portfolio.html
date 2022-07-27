@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nuel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\css\external1.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+  body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<div class="container-fluid ">
+<!-- nav starts -->
+<nav class="navbar navbar-expand-md  navbar-dark fixed-top" >
+    <div class="row">
+     
+      <div class="topnav navbar navbar-expand-md  navbar-dark fixed-top" id="myTopnav" 
+      style="background-color: rgb(0, 0, 0, 0.7); width: 98.5%; margin-left: 15px; box-shadow: 10px 10px 10px  #8921E0; border-radius: 1rem; ">
+        <a href="#background" class="active" id="home">Home</a>
+        <a href="#section2" id="menu">About</a>
+        <a href="#section4" id="menu">Testimonials</a>
+        <a href="#section3" id="menu">Gallery</a>
+        <a href="#section5" id="menu">Contacts</a>
+         <!-- login starts here -->
+<button onclick="document.getElementById('id01').style.display='block'" 
+style="width:auto; background-color: rgb(0, 0, 0, 0); border-radius: 6px; height: 50px; position: fixed; left:1750px; font-family: bell mt; font-size: 20px; text-transform: uppercase; color: #BDD5EA;">signup</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\portfolio.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://cdn4.vectorstock.com/i/thumb-large/13/53/male-avatar-profile-picture-purple-member-vector-5351353.jpg" alt="Avatar" class="avatar" style="height:300px ;width: 300px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="reset" style="background-color: gray; margin-bottom: 20px;">reset</button>
+      <button type="submit">Sign up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<!-- login ends here -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+
+
+    </div>
+  </nav>
+<!-- nav ends -->
+
+<!-- welcome page starts here -->
+
+<div id="background" >
+ 
+    <div class="row" style="margin-top: 100px;">
+        <div class="col-md-4" id="snap">          
+        <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\53130.jpg" id="img1" ></div>  
+  <div class="col-md-6" id="intropage" > <p id="welcome">Nuel Edor<br><span id="intro">Junior web developer</span></p>
+</div>
+    </div>
+    <div style="height:100px ;width:100%"></div>
+
+    <!-- welcome page ends here -->
+</div>
+<!-- home ends here -->
+
+
+<div id="section2"  style="padding:100px 20px; background-color: rgb(0, 0, 0, 0.9); min-height: 880px;">
+    <div class="row" id="aboutme" @keyframes="examples">
+        <div class="col-md-4" style="text-align:justify; padding-top:5rem; padding-left: 50px;">
+<h1 style="color: #571B8F; font-weight: bold; text-align:center; font-family: bell mt; font-size: 60px;"> ABOUT ME</h1>
+<!-- <h2 style="text-align:center; color: #BDD5EA; font-family: Bell mt;">About Me</h2> -->
+<p style="font-size: 20px;">i'm a medical student but i soon learnt my true north was in IT and web development. 
+My programming background has helped me automate most of my tasks along the way and eventually ended up in web developing as it gives me even more possibilities. 
+i am a potential full-stack web Developers who has particularly strong development skills with all things AWS—which his numerous certifications can attest to.</p>
+        </div>
+        <div class="col-md-4" style="padding-left: 50px;">
+<img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\81648.jpg" style="border-radius: 40%; width: 95%; height: 520px;" >
+        </div>
+        <div class="col-md-4" style="padding-top:4.2rem">
+            <h1>designing</h1>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #8921E0;" aria-valuenow="60"  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h1>photography</h1>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="background-color:  gold;width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h1>Web development</h1>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="background-color: #96C5E8; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h1>crafting</h1>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="background-color: #8921E0 ; width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h1>painting and scetching</h1>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="background-color: #8921E0; width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+        </div>
+    </div>
+  
+</div>
+
+
+
+<div id="section4" class=" text-white" style="">
+    <!-- my skills 2 starts here-->
+    <div style="height: 100px;"></div>
+    <div class="row" id="skills1">
+        <div class="col-md-4" style="color: #BDD5EA; text-align: center; font-family: bell mt;" id="skill">  
+          <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-web-50.png">
+            <!-- <h1 id="quotesh" >Web Designing</h1> -->
+          <p id="quotesb">"Emie's work is one of the best out there and it's so refreshing to see his art like style in web development. His progress has been rapid and his talent has evolved into world class ability. If you need a website, look no further than Emie...."</p>
+        <h6 id="blapurple">Engineer Michael Kama</h6></div>        
+    <div class="col-md-4" id="skill">
+        <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-organize-48.png"> <h1 id="quotesh">Web Development</h1>
+      <p id="quotesb"> "If your business is not on the internet, then your business is out of business..."</p>
+    <h6 id="blamilk">Microsoft Founder, Bill Gates</h6></div>
+    
+    <div class="col-md-4" style="color: #BDD5EA; text-align: center; font-family: bell mt"id="skill">  
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-organize-64.png">
+        <!-- <h1 id="quotesh">Graphic Designing</h1> -->
+        <p id="quotesb">"Emie is already one of my favorite persons. He isn’t one to be discouraged by challenges and his always willing to push his limit. In addition, Emie is highly motivated and interested in learning and self development..."</p>
+        <h6 id="blapurple">Dr. Jennifer Akosa</h6></div>
+            </div>
+            <!-- my skills 2 ends here -->
+     <!-- my skills 2 starts here-->
+     <div class="row" id="skills2">
+                 
+        <div class="col-md-4"id="skill">
+            <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-photography-64.png"> <h1 id="quotesh">photography</h1>
+           <p id="quotesb">"photography is the only language that is understood anywhere in the world..."</p>
+            <h6 id="blamilk">Fabien Barral</h6></div>
+         <div class="col-md-4" style="color: #BDD5EA; text-align: center; font-family: bell mt;" id="skill"> 
+          <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-paint-palette-64.png">
+                <h1 id="quotesh">painting & Sketching</h1>
+                <p id="quotesb">"Painting is by nature a luminous language, reflecting the beauty of a desired image ..."</p>
+                <h6 id="blapurple">Robert Delaunay</h6></div>  
+        <div class="col-md-4" id="skill">  <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\icons8-craft-64.png">
+            <h1 id="quotesh">Crafting</h1>
+            <p id="quotesb">"In crafting there is no mistakes just unique creations..."</p>
+            <h6 id="blamilk">Fabien Barral</h6> </div>
+                </div>
+                <!-- my skills 2 ends here -->
+  </div>
+
+<!-- gallery starts here -->
+<div id="section3" class="container-fluid  text-white" style="padding:100px 20px; clear: both; background-color: #000;">
+    <h2 style="text-align:center; font-family: bell mt;">Photo Gallery</h2>
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1223.PNG" style="width:100%;  border-radius: 10%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1221.PNG" style="width:100%;  border-radius: 10%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1222.PNG" style="width:100%;  border-radius: 10%;">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\new4.jpg" style="width:100%;  border-radius: 10%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\photo_5386866356693089717_y.jpg" style="width:100%;  border-radius: 10%;">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1225.PNG" style="width:100%;  border-radius: 10%;">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1223.PNG" style="width:100%" onclick="currentSlide(1)" alt="Summer">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1221.PNG" style="width:100%;  border-radius: 10%;" onclick="currentSlide(2)" alt="On Trad">
+      </div>
+      
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1222.PNG" style="width:100%" onclick="currentSlide(3)" alt="Chilling">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\new4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Wediing">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\photo_5386866356693089717_y.jpg" style="width:100%" onclick="currentSlide(5)" alt="Winter">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\photosamples\IMG_1225.PNG" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+</div>
+<!-- gallery ends here -->
+
+
+<!-- contacts start here -->
+<div id="section  " class="bg-secondary text-white" style="display: none;">
+    <h1 style="font-family: Dancing Script; text-align: center; color: #000;">CONTACT FORM</h1>  <h2 style="text-align: center; font-family: bell mt; color: black;">Reach out to us today</h2>
+    <div class="row">
+        <div class="col-md-5" id="contactdiv1" >
+            <p> Phone: +380638894074</p>
+            <p> Address: Sustekova street 47, Bratislava. Slovakia</p>
+            <p> Email: +380638894074</p>
+        </div>
+        <div class="col-md-7" id="contactdiv2">
+          
+          <div class="container2">
+            <form action="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\homepage.html">
+              <label for="fname"><b style="color: #000;">First Name</b></label>
+              <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+          
+              <label for="lname" style="color: #000;"><b>Last Name</b></label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          
+              <label for="country" style="color: #000;"><b>Country</b></label>
+              <select id="country" name="country" required>
+                <option value="others">select country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Germany">Germany</option>
+              </select>
+          <br>
+              <label for="subject" style="color: #000;" ><b>Subject</b></label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" required></textarea>
+              <button type="reset" style="border: 2px; background-color:red; width: 5rem; font-family:'Times New Roman', Times, serif; height: 50px; color: #d9dddc; margin: 20px; margin-top: 5px; text-align: center; border-radius: 6px;">
+                RESET
+            </button>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+<!-- contacts end here -->
+
+
+
+
+
+<!-- Contact Section -->
+<div class="bg dark" id="section5">
+<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+  <h2 class="w3-text-light-grey">Do you want to work with us, reach us today!!!</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bratislava, Slovakia</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +380 638894074</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: emieedie@mail.com</p>
+  </div><br>
+  <p>Let's get in touch. Send me a message:</p>
+
+  <form action="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\portfolio.html" target="_blank">
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" style="border-radius: 6px;"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" style="border-radius: 6px;"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" style="border-radius: 6px;"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" style="border-radius: 6px;"></p>
+    <p>
+      <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </p>
+  </form>
+<!-- End Contact Section -->
+</div>
+
+  <!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ 
+  <p class="w3-medium">Designed by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration: none;">NUEL EDOR</a></p>
+</div>
+<div style="border:none ; float: left; height: 40px; width: 100%; background-color: #571B8F;">
+  <div style="float: left; margin-top:5px; width: 100%; text-align: center;">
+ <p style="font-family: bell mt; color: #BDD5EA; "><b>©️ 2022 Nuel Edor. All rights reserved</b></p>>
+  </div>
+<!-- End footer -->
+</footer>
+
+<!-- <div id="footermain" class="row ">
+  <h2 style="text-align: center; margin-top: 20px;"><a href="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\sample2.html" style="text-decoration: ; color: white;">CONTINUE TO NEXT PAGE</a></h2> -->
+  <!-- <div class="col-md-5" id="footer1">
+<h2 style="color:white ;"> KNOW IT ALL FIRST</h2>
+<H3 style="color:white ;">Get the latest news and updates on web development</H3>
+  </div>
+  <div id="footer2" class="col-md-4">
+  <form>
+   <div id="Div2_sub2">
+       <label for="email"></label>
+       <input type="email" name="email" placeholder=" Enter your email address" id="email" style="width:100%; height: 30px; float:" required>
+   </div>
+  </form>
+
+              </div>
+              <div style="height: 100px; width: 10%; margin-left: 0px; border: 1px solid red;margin-top: 50px; float: left; padding-top: 28px;">
+               <!-- <form action="C:\Users\HP\OneDrive\Desktop\My_web_files.html\School project\Login.html" target="_self" method="post">
+               
+                            <button type="submit" style="  font-family:bell mt; height: 60px; color: #000; margin-top:9px;  border-radius: 10px; background-color: #8921E0  ;" class="form-control">
+                                SUBMIT
+                            </button>
+               </form> -->
+               <!-- <a href="C:\Users\HP\OneDrive\Desktop\My_web_files.html\portfolio\sample2.html" style="margin-top: 30px; text-decoration: none; color: white;">SUBMIT</a>
+                           </div>
+                           <div style="border-top:2px solid goldenrod ; float: left; height: 1px; width: 67%; margin-left: 300px"></div>
+
+
+                           <div style="border:none ; float: left; height: 259px; width: 67%; margin-left: 300px">
+<div style="float: left; margin: 30px;">
+<img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\School project\high school project\purple logo.jpeg" style="height: 200px; width: 200px;">
+</div>
+<div style="float: left; width:20%; margin-top: 25px; margin-left: 30px;">
+<h2 style="color: #d9dddc; text-align: center;">QUICK LINKS</h2>
+<P style="text-align: center; color: #D9DDDC;">Our campus</P>
+<P style="text-align: center;color: #D9DDDC;">Research</P>
+<P style="text-align: center;color: #D9DDDC;">Projects</P>
+<P style="text-align: center;color: #D9DDDC;">Careers</P>
+</div>
+<div style="float: left; width:20%; margin-top: 25px;margin-left: 30px;">
+<h2 style="color: #d9dddc; text-align: center;">OTHER LINKS</h2>
+<P style="text-align: center;color: #D9DDDC;">Journal</P>
+<P style="text-align: center;color: #D9DDDC;">E-Learning</P>
+<P style="text-align: center;color: #D9DDDC;">Open courseware</P>
+</div>
+<div style="float: right; width:20%; margin-top: 25px; margin-right: 110px;">
+<h2 style="color: #d9dddc; text-align: center;">CONTACTS</h2>
+<P style="text-align: center; color: #D9DDDC;">Address: Sustekova street 47, Bratislava. Slovakia</P>
+<P style="text-align: center;color: #D9DDDC;">email: <a href="mailto: emieedie@gmail.com" style="text-decoration: none; color: #d9dddc" target="_blank">emieedie@gmail.com</a></P>
+<P style="text-align: center;color: #D9DDDC;">Phone: +421905157188</P>
+<P style="text-align: center;color: #D9DDDC;">Phone: +380638894074</P>
+</div> -->
+
+                           </div> -->
+
+
+                           
+                               
+                                                                   </div>
+
+                                                                   
+                           <!-- <div style="border:none ; float: left; height: 40px; width: 100%; background-color: #571B8F;">
+                             <div style="float: left; margin-top:5px; width: 100%; text-align: center;">
+                            <p style="font-family: bell mt; color: #BDD5EA; "><b>©️ 2022 Nuel Edor. All rights reserved</b></p>>
+                             </div> -->
+                             <!-- <div style="float: left; width:10%; margin-left: 400px;">
+                             <p style="color: darkorchid; text-align: center;">Privacy Policy</p>
+                          
+                             </div>
+                             <div style="float: left; width:10%; margin-left: 10px;">
+                                 <p style="color: darkorchid; text-align: center;">Terms of Use</p>
+                                
+                                 </div>
+                                 <div style="float: left; width:10%;  margin-left: 10px;">
+                                     <p style="color: darkorchid; text-align: center;">Disclaimer</p>
+                          
+                                     </div> -->
+              
+              
+</div>
+<!-- <div style="border: 1px; height: 50px; width:100%; margin-top: 10px; background-color: ; position: fixed; bottom: 0; right: 0;">
+  
+  <div style=" height:60%: width: 40%; float: center; margin-top: 3px; margin-left: 1450px;">
+   <p style="color:#D9DDDC; font-family: times new roman; margin-left:10px ;"> DESIGNED BY: Anonymous Web Developer</p></div>    
+       <div style="height: 100px; width: 100px;  float: left; margin-top: 10px; margin-left: 10px; ">
+           <img src="C:\Users\HP\OneDrive\Desktop\My_web_files.html\School project\high school project\icons8-hacker-60.png" style="height:30px ;width:30px; "></div>
+   </div>  -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</div>    
+</body>
+</html>

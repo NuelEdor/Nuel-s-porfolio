@@ -1,0 +1,353 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+#header{
+    /* position: fixed; */
+    top: 100;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-top: 15px;
+
+}
+#header:hover{
+    width:100%
+}
+#my_logo{
+    float: left;
+    max-width: ;
+    height: 40px;
+    margin-top:10px;
+    margin-left: 50px;
+    color: #BDD5EA;
+    margin-right: 100px;
+    font-size: small;
+}
+
+#my_logo a{
+    text-decoration: none;
+    color: #BDD5EA;
+    font-family: Jokerman;
+    font-size: 40px;
+  }
+
+
+
+#my_logo a:hover{
+     color: white;
+  }
+
+#my_menu{
+ 
+    width: 80%;
+    height: 45px;
+    margin-left: px;
+    font-family: jokerman;
+    font-size: 1.5rem;
+    color: #BDD5EA;
+    float: right;
+  
+    
+    
+    
+    
+}
+
+
+ul li{
+    display: inline;
+    margin-left: 75px;
+    width: 30%;
+  }
+
+ul li a{
+    text-decoration: none;
+    color: #BDD5EA;
+}
+
+ul li:hover {
+    background-color:;
+    border-radius: 6px;
+   
+    color: white;
+}
+
+ul li a:hover {
+       color: white;
+}
+
+#background{
+    background-color: black;
+    min-height: 800px;
+    width: 100%;
+    clear: both;
+    
+   
+}
+#snap{
+    padding-left: 100px;
+padding-top: 50px;}
+#img1{
+    border-radius: 50%;
+    height: 90%;
+    width: 80%;
+    float: left;
+    margin: 30px;
+}
+#welcome{
+    font-size: 90px;
+   font-weight: bold;
+    color: #8921E0;
+    text-align: center;
+    font-family: bell mt;
+    text-transform: uppercase;
+}
+#intro{
+    font-size: 30px;
+    margin: 30px;
+    color: #BDD5EA;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+#intropage{
+  align-items: center;
+  justify-content: center;
+  display: flex
+}
+#aboutme{
+    height: 500px;
+    width: 100%;
+    color: white;
+    font-family: bell mt;
+    clear: both;
+
+}
+#skills1{
+    height: 300px;
+    width: 100%;
+}
+#skills2{
+    height: 300px;
+    width: 100%;
+}
+#skill{
+    color: #000; 
+    text-align: center; 
+    font-weight: bold;
+    font-family: bell mt; 
+    clear: both;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+#quotesh{
+    font-family: bell mt;
+    font-size: 48px;
+    
+}
+#quotesb{
+    font-size: 25px;
+    font-family: bell mt;
+    text-align: justify;
+}
+#blamilk{
+    color: gold;
+    font-size: 20px;
+}
+#blapurple{
+    color: gold;
+    font-size: 20px;
+}
+#contactdiv1{
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-family: bell mt;
+    font-size: 30px;
+    color: #000;
+}
+
+#contactdiv2{
+    height: 300px;
+
+}
+/* <!-- contact form starts here --> */
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 45px;
+}
+
+input[type=submit] {
+  background-color: #4F1E8A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor:crosshair;
+  height: 50px;
+
+}
+input[type=reset] {
+  background-color: #4F1E8A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor:crosshair;
+  height: 50px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #8921E0;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: solid gold;
+  padding: 20px;
+  width: 70%;
+}
+/* <!-- contact ends starts here --> */
+
+
+
+
+
+
+
+/* login styling starts here */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  /* logi styling ends here */
+
+
+ 
